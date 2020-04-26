@@ -1,32 +1,31 @@
-body
-{ 
- background-color: white;
- font-family: Arial;
+body {
+    background-color: white;
+    font-family: Arial;
 
 }
-header
-{
+
+header {
     color: #02800B;
 }
-#titulo
-{
+
+#titulo {
     color: #82110f;
     font-style: italic;
-    
+
 }
-.subtitulo
-{
-color:#787372;
-font-style: italic;
+
+.subtitulo {
+    color: #787372;
+    font-style: italic;
 }
-span
-{
-color: #458828;
-font-style: italic;
+
+span {
+    color: #458828;
+    font-style: italic;
 }
-#copyright
-{
+
+#copyright {
     display: flex;
-    justify-content:flex-end;
+    justify-content: flex-end;
     font-style: italic;
 }
