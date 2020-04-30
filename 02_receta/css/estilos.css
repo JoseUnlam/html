@@ -1,12 +1,10 @@
 body{
-    display: grid;
     width: 100vw;
     height: 100vh;
     background-image: url(../img/fondo.jpg);
 
 }
 main{
-    grid-template-areas: main;
     margin:0% 10%;
 }
 #inicio{
