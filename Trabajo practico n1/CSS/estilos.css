@@ -1,0 +1,153 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+main {
+    display: grid;
+    background: #5b3758;
+    width: 100vw;
+    height: 100vh;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 15 30 20 20 15vh;
+    grid-template-areas:
+    "header header header"
+    "slidder slidder slidder"
+    "nav nav nav"
+    "section section section"
+    "footer footer footer"
+    ;
+}
+
+header{
+    grid-area: header;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    background:#f9627d;
+    width: 100vw;
+    height: 80px;
+}
+
+#slidder{
+    grid-area: slidder;
+}
+nav{
+    grid-area: nav;
+}
+section{
+    grid-area: section;
+}
+footer{
+    grid-area: footer;
+}
+
+.logo{
+    font-size: 40px;
+    color:#bbb;
+}
+/* search>> */
+.fieldset{
+    display: flex;
+    justify-content: center;  
+}
+fieldset{
+    background: #bbb;
+    border: none;
+    border-radius: 5px;
+   
+}
+
+input{
+    border: none;
+    color: #666;
+    width: 40vw;
+}
+fieldset input,button{
+   margin:10px 10px;
+}
+fieldset button{
+    width: 50px;
+    background: #666;
+    border: none;
+    border-radius: 5px;
+}
+.fa-search{
+    color: white;
+
+}
+/* <<search */
+/* Slidder>> */
+#slidder{
+    margin: 30px auto;
+    width: 380px;
+    overflow: hidden;
+}
+#slidder ul{
+    width: 1520px;
+    height: 214px;
+    list-style: none;
+    display: flex;
+    animation:  slidder 40s infinite alternate;
+}
+#slidder ul li{
+    overflow: hidden;
+}
+@keyframes slidder{
+    0% {margin-left:-0px;}
+    25% {margin-left:-0px;}
+
+    25% {margin-left:-380px;}
+    50% {margin-left:-380px;}
+
+    50% {margin-left:-760px;}
+    75% {margin-left:-760px;}
+
+    75% {margin-left:-1140px;}
+    100% {margin-left:-1140px;}
+
+}
+/* <<slidder */
+nav{
+    background:#f9627d;
+}
+.IconosNav{
+    font-size: 100px;
+
+}
+.itemNav{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    
+    
+
+}
+.lista{
+    display: flex;
+    flex-direction: row;
+    flex-direction:row;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 25px;
+}
+section{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    background: #666;
+}
+article h2 strong{
+    font-size: 60px;
+}
+footer{
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+
+
+
