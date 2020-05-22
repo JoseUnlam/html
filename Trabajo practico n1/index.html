@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -15,7 +15,7 @@
             <i class="logo fas fa-house-user"></i>
             <form>
                 <fieldset class="buscador">
-                    <input class="search" type="search">
+                    <input class="search" placeholder="ingrese la busquedad" type="search">
                     <button class="button" type="submit">
                         <i class="fas fa-search"></i>
                     </button>
@@ -23,80 +23,61 @@
             </form>
 
         </header>
-        <div id="slidder">
-            <ul>
-                <li><img src="IMG SLIDER/img1.jpg" alt=""></li>
-                <li><img src="IMG SLIDER/img2.png" alt=""></li>
-                <li><img src="IMG SLIDER/img3.png" alt=""></li>
-                <li><img src="IMG SLIDER/img4.png" alt=""></li>
-            </ul>
-
-        </div>
-        <nav>
-            <ul class="lista">
-            <li class="itemNav">
-                <a class="IconosNav" href=""><i class="fas fa-lungs-virus"></i></a> 
-                
-            </li>
-            <li class="itemNav">
-                <a class="IconosNav" href=""><i class="fas fa-syringe"></i></a>
-            </li>
-            <li class="itemNav">
-                <a class="IconosNav" href=""><i class="far fa-hospital"></i></a>
-            </li>
-        </ul>
+        <section class="carrusel">
+            <div class="slidder">
+                <ul class="contenedor">
+                    <li><img src="IMG SLIDER/img1.jpg" alt=""></li>
+                    <li><img src="IMG SLIDER/img2.png" alt=""></li>
+                    <li><img src="IMG SLIDER/img3.png" alt=""></li>
+                    <li><img src="IMG SLIDER/img4.png" alt=""></li>
+                </ul>
+            </div>
+        </section>
+        <nav class="contenedorNav">
+            <div class="menu">
+                <i class="fas fa-lungs-virus"></i> <br><br>
+                <a href="">Enfermedades</a>
+            </div>
+            <div class="menu">
+                <i class="fas fa-syringe"></i> <br><br>
+                <a href="">Vacunas</a>
+            </div>
+            <div class="menu">
+                <i class="far fa-hospital"></i> <br><br>
+                <a href="">Mapas de Hospitales</a>
+            </div>
         </nav>
         <section>
             <article>
-            <h2>Si tenes sintomas de COV-19 <br><strong>LLAMA AL </strong></h2>
-        </article>
-        <article>
-            <a class="IconosNav" href=""><i class="fas fa-phone-alt"></i>148</a>
-        </article>
+                <h2>Si tenes sintomas de COV-19 <br><strong>LLAMA AL </strong></h2>
+            </article>
+            <article>
+                <a class="IconosNav" href=""><i class="fas fa-phone-alt"></i>148</a>
+            </article>
+
         </section>
         <footer>
-            <ul>
-                <li>
+            <div class="contenedor">
+                <ul class="item1">
+                    <h2>Datos del grupo</h2><br>
+                    <li><p> Hinojosa José </p></li>
+                </ul>
+                <ul class="item2">
+                    <h2>Menu inferior</h2><br>
+                    <li><a href="">Enfermedades</a></li>
+                    <li><a href="">Vacunas</a></li>
+                    <li><a href="">Mapas de hospitales</a></li>
+                    <li><a href="">contactos</a></li>
 
-                </li>
-                <li>
-
-                </li>
-            </ul>
-            <ul>
-                <li>
-
-                </li>
-                <li>
-
-                </li>
-                <li>
-
-                </li>
-                <li>
-
-                </li>
-                <li>
-
-                </li>
-
-            </ul>
-            <ul>
-                <li>
+                </ul>
+                <ul class="item3">
                     <h2>Redes sociales</h2>
-                    <a href=""><i class="fab fa-facebook-square"></i></a>
-
-                </li>
-                <li>
-                    <a href=""><i class="fab fa-instagram"></i></a>
-
-                </li>
-                <li>
-                    <a href=""><i class="fas fa-envelope"></i></a>
-
-                </li>
-            </ul>
-
+                    <li class="lista"><a href=""><i class="fab fa-facebook-square"></i></a></li>
+                    <li class="lista"><a href=""><i class="fab fa-instagram"></i></a></li>
+                    <li class="lista"><a href=""><i class="fas fa-envelope"></i></a>
+                    </li>
+                </ul>
+            </div>
         </footer>
     </main>
 </body>

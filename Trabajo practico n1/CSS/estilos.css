@@ -1,153 +1,216 @@
-*{
+* {
     padding: 0px;
     margin: 0px;
 }
+
 main {
     display: grid;
     background: #5b3758;
     width: 100vw;
     height: 100vh;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: 15 30 20 20 15vh;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1 3 2 2 1fr;
     grid-template-areas:
-    "header header header"
-    "slidder slidder slidder"
-    "nav nav nav"
-    "section section section"
-    "footer footer footer"
+        "header header header"
+        "carrusel carrusel carrusel"
+        "nav nav nav"
+        "section section section"
+        "footer footer footer"
     ;
 }
 
-header{
+header {
     grid-area: header;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
-    background:#f9627d;
+    background: #f9627d;
     width: 100vw;
-    height: 80px;
 }
 
-#slidder{
-    grid-area: slidder;
-}
-nav{
+
+nav {
     grid-area: nav;
 }
-section{
+
+section {
     grid-area: section;
 }
-footer{
+
+footer {
     grid-area: footer;
 }
 
-.logo{
+header .logo {
     font-size: 40px;
-    color:#bbb;
+    color: #bbb;
 }
+
 /* search>> */
-.fieldset{
+fieldset .buscador {
     display: flex;
-    justify-content: center;  
+    justify-content: center;
 }
-fieldset{
+
+fieldset {
     background: #bbb;
     border: none;
     border-radius: 5px;
-   
+
 }
 
-input{
+header fieldset input {
     border: none;
-    color: #666;
     width: 40vw;
+    text-align: center;
+
 }
-fieldset input,button{
-   margin:10px 10px;
+
+fieldset input,
+button {
+    margin: 10px 10px;
 }
-fieldset button{
+
+fieldset button {
     width: 50px;
     background: #666;
     border: none;
     border-radius: 5px;
 }
-.fa-search{
+
+.fa-search {
     color: white;
 
 }
+
 /* <<search */
 /* Slidder>> */
-#slidder{
-    margin: 30px auto;
+.carrusel {
+    grid-area: carrusel;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #bbb;
+}
+
+.slidder {
     width: 380px;
     overflow: hidden;
 }
-#slidder ul{
+
+.slidder ul {
+    display: flex;
     width: 1520px;
     height: 214px;
     list-style: none;
-    display: flex;
-    animation:  slidder 40s infinite alternate;
+    animation: slidder 40s infinite alternate;
 }
-#slidder ul li{
-    overflow: hidden;
+
+@keyframes slidder {
+    0% {
+        margin-left: -0px;
+    }
+
+    25% {
+        margin-left: -0px;
+    }
+
+    25% {
+        margin-left: -380px;
+    }
+
+    50% {
+        margin-left: -380px;
+    }
+
+    50% {
+        margin-left: -760px;
+    }
+
+    75% {
+        margin-left: -760px;
+    }
+
+    75% {
+        margin-left: -1140px;
+    }
+
+    100% {
+        margin-left: -1140px;
+    }
+
 }
-@keyframes slidder{
-    0% {margin-left:-0px;}
-    25% {margin-left:-0px;}
 
-    25% {margin-left:-380px;}
-    50% {margin-left:-380px;}
-
-    50% {margin-left:-760px;}
-    75% {margin-left:-760px;}
-
-    75% {margin-left:-1140px;}
-    100% {margin-left:-1140px;}
-
-}
 /* <<slidder */
-nav{
-    background:#f9627d;
+.contenedorNav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #f9627d;
 }
-.IconosNav{
+
+.contenedorNav .menu>a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #666;
+}
+
+.fa-lungs-virus,
+.fa-syringe,
+.fa-hospital {
     font-size: 100px;
+    color: #bbb;
+}
 
-}
-.itemNav{
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-end;
-    
-    
-
-}
-.lista{
-    display: flex;
-    flex-direction: row;
-    flex-direction:row;
-    justify-content: space-around;
-    align-items: center;
-    border-radius: 25px;
-}
-section{
+section {
     display: flex;
     justify-content: space-around;
     flex-direction: row;
     align-items: center;
-    background: #666;
+    background: #bbb;
 }
-article h2 strong{
+
+article h2 strong {
+    color: #666;
     font-size: 60px;
 }
-footer{
-    display: flex;
-    flex-direction: row;
+
+article h2 {
+    color: #666;
 }
 
+.fa-phone-alt {
+    color: #666;
+    font-size: 50px;
+}
 
+section article .IconosNav {
+    text-decoration: none;
+    font-size: 70px;
+    color: #666;
+}
 
+footer .contenedor {
+    display: flex;
+    justify-content: space-around;
 
+}
+footer .contenedor .item3{
+    display: flex;
+    align-items: center;
+    list-style: none;
+  
+}
+footer .contenedor .item3 h2{
+    display: flex;
+    align-self: flex-start;
 
-
+}
+footer .contenedor .item1,.item2{
+    list-style: none;
+}
+.item2 li >a {
+text-decoration: none;
+color: black;
+}
